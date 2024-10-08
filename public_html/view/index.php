@@ -11,45 +11,49 @@
 
 <body>
 
+    <nav>
 
+        <button>
+            <i class="nav-icon fa fa-home"></i>
+            <h2 class="nav-text">Accueil</h2>
+        </button>
+
+        <button>
+            <i class="nav-icon fa fa-briefcase"></i>
+            <h2 class="nav-text">Compétences</h2>
+        </button>
+
+        <button>
+            <i class="nav-icon fa fa-id-card-o"> </i>
+            <h2 class="nav-text">À propos</h2>
+        </button>
+
+        <button>
+            <i class="nav-icon fa fa-book"></i>
+            <h2 class="nav-text">Formations</h2>
+        </button>
+
+    </nav>
     <main>
-        <nav>
 
-            <button>
-                <i class="nav-icon fa fa-home"></i>
-                <h2 class="nav-text">Accueil</h2>
-            </button>
+        <section id = "content1">
+            <section id="profilInfo"></section>
+            <section id="contactForm">
+                <form action="">
 
-            <button>
-                <i class="nav-icon fa fa-briefcase"></i>
-                <h2 class="nav-text">Compétences</h2>
-            </button>
-
-            <button>
-                <i class="nav-icon fa fa-id-card-o"> </i>
-                <h2 class="nav-text">À propos</h2>
-            </button>
-
-            <button>
-                <i class="nav-icon fa fa-book"></i>
-                <h2 class="nav-text">Formations</h2>
-            </button>
-
-        </nav>
-
-        <content>
+                </form>
+            </section>
             
-            <subContent1>
-            </subContent1>
+            
+        </section>
 
-            <subContent2>
-            </subContent2>
-        </content>
+        <section id = "content2">
+        </section>
 
     </main>
 
     <footer>
-        <h2>Footer</h2>
+        <h2>Portfolio - Louis Potdevin - 2024 </h2>
     </footer>
 </body>
 

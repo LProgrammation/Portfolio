@@ -6,94 +6,119 @@
 html {
     background: linear-gradient(#9D0A03, #2F0300);
     background-size: cover;
+
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0;
+    padding: 0;
     
 }
 
-body{
-    margin: 0;
-    padding: 0;
-}
 
 
-main{
-    display: flex;
-    height: 100vh;
-}
 
-nav{
-    display: flex;
-    flex-flow: column wrap;
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: #3f0400;
     width: 5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    transition: all 0.5s ease;
+    transition: width 0.5s ease;
+    
 }
 
-nav:hover{
+nav:hover {
     width: 15vw;
 }
 
-nav button{
+nav button {
     display: flex;
-    flex-flow: column nowrap ;
+    flex-flow: column nowrap;
     width: 80%;
     height: 5vh;
-    margin-top: 5vh;
     font-size: 4vh;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    margin-top: 3vh;
     text-shadow: #9D0A03 1px 0 10px;
     color: rgb(179, 179, 179);
     transition: font-size 0.5s ease;
-    
+
 }
 
-nav button:hover{
+nav button:hover {
     font-size: 4.5vh;
 }
 
 nav button i {
     position: absolute;
-    margin-top: 1vh ;
     margin-left: 1vw;
-    
+
 }
-nav button h2{
+
+nav button h2 {
     position: absolute;
     opacity: 0;
     visibility: hidden;
     margin-top: 1.5vh;
     font-size: 0.5em;
 }
-nav:hover button h2{
+
+nav:hover button h2 {
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.5s ease, visibility 0.5s ease, margin-left 0.5s ease; 
-    margin-left: 4vw;
+    transition: opacity 0.5s ease, visibility 0.5s ease, margin-left 0.5s ease;
+    margin-left: 5vw;
 
 }
 
-content{
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    margin: 20px;
-    background-color: #2f03006c;
-    padding: 10px;
-}
-
-subContent1{
+main {
     flex: 1;
-    border: 1px solid red;
+    display: flex;
+    background-color: #2f03006c;
+    padding: 20px;
+    margin: 1vw;
+    margin-left: 6vw;
+    border-radius: 1rem;
+    overflow-y: auto;
+
 }
-subContent2{
+
+#content1,
+#content2 {
     flex: 1;
     border: 1px solid green;
+    border-radius: 1rem;
+    margin: 10px;
+    padding: 20px;
+    padding-top: 0px;
+    gap: 10px;
 }
 
-footer{
+#profilInfo,
+#contactForm{
+    
+    border: 1px solid white;
+    height: 50vh;
+    margin-top: 20px;
+    border-radius: 1rem;
+}
+
+
+footer {
+    position: relative;
     background-color: #250000;
     padding: 10px;
+    width: 100vw;
+    height: 10vh;
     color: rgb(179, 179, 179);
-    font-size: 4vh;
+    font-size: 2vh;
 }
