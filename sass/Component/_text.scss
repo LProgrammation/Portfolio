@@ -1,0 +1,15 @@
+.text-hide-hv{
+    opacity: 0;
+    visibility: 0;
+    color: white;
+}
+
+.text-profil{
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    border-radius: 1rem;
+    background-color: rgba($color: #4700008a, $alpha: 1.0);
+    padding: 10px;
+    width: 90%;
+    font-size: 3vh;
+    text-align: center;
+}

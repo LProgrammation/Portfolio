@@ -1,0 +1,10 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba($color: #550808, $alpha: 1.0);
+    width: 100vw;
+    height: 10vh;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}

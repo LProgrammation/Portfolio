@@ -5,39 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Louis Potdevin</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
 
-    <nav>
+    <nav class="nav-transition ctr-alg-itm absolute">
 
-        <button>
-            <i class="nav-icon fa fa-home"></i>
-            <h2 class="nav-text">Accueil</h2>
+        <button class="btn btn-no-bg btn-no-bd">
+            <div class="icon icon-b"><i class="fa fa-home absolute left "></i></div>
+            <h2 class="text-hide-hv absolute left">Accueil</h2>
         </button>
 
-        <button>
-            <i class="nav-icon fa fa-briefcase"></i>
-            <h2 class="nav-text">Compétences</h2>
+        <button class="btn btn-no-bg btn-no-bd">
+           <div class="icon icon-b"> <i class="fa fa-briefcase absolute left"></i></div>
+            <h2 class="text-hide-hv absolute left">Compétences</h2>
+        </button>
+ 
+        <button class="btn btn-no-bg btn-no-bd">
+            <div class="icon icon-b"><i class="fa fa-id-card-o absolute left"></i></div>
+            <h2 class="text-hide-hv absolute left">À propos</h2>
         </button>
 
-        <button>
-            <i class="nav-icon fa fa-id-card-o"> </i>
-            <h2 class="nav-text">À propos</h2>
+        <button class="btn btn-no-bg btn-no-bd">
+            <div class="icon icon-b"><i class="fa fa-book absolute left"></i></div>
+            <h2 class="text-hide-hv absolute left">Formations</h2>
         </button>
-
-        <button>
-            <i class="nav-icon fa fa-book"></i>
-            <h2 class="nav-text">Formations</h2>
-        </button>
+        
 
     </nav>
     <main>
 
-        <section id = "content1">
-            <section id="profilInfo"></section>
+        <section id="content1">
+            <section id="profil">
+                <img src="images/profilPhoto.jpg" alt="">
+                <section id="profilInfo">
+                    <h4 class="text-profil"> Potdevin Louis </h4>
+                    <h4 class="text-profil"> Web Developper FullStack </h4>
+                    <h4 class="text-profil"> 06 52 34 18 11 </h4>
+                    <h4 class="text-profil"> Gap - 05000 - Haute Alpes </h4>
+                </section>
+            </section>
             <section id="contactForm">
                 <form action="">
 
@@ -47,14 +58,16 @@
             
         </section>
 
-        <section id = "content2">
+        <section id="content2">
         </section>
 
     </main>
 
     <footer>
-        <h2>Portfolio - Louis Potdevin - 2024 </h2>
+        <h2 class="text-3xl font-sans underline" >Portfolio - Louis Potdevin - 2024 </h2>
     </footer>
+
+
 </body>
 
 
