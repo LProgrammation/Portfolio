@@ -1,0 +1,68 @@
+$sizes : 10,
+20,
+30,
+40,
+50,
+60,
+70,
+80,
+90,
+100;
+
+@each $size in $sizes {
+    .mt-#{$size} {
+        margin-top: #{$size}+"px";
+    }
+
+    .ml-#{$size} {
+        margin-left: #{$size}+"px";
+    }
+
+    .mr-#{$size} {
+        margin-right: #{$size}+"px";
+    }
+
+    .mb-#{$size} {
+        margin-bottom: #{$size}+"px";
+    }
+
+    .m-#{$size} {
+        margin: #{$size}+"px";
+    }
+}
+
+@for $i from 0 through 100 {
+    .mt-#{$i}vh {
+        margin-top: #{$i}+"vh";
+    }
+
+    .ml-#{$i}vw {
+        margin-left: #{$i}+"vw";
+    }
+
+    .mr-#{$i}vw {
+        margin-right: #{$i}+"vw";
+    }
+
+    .mb-#{$i}vh {
+        margin-bottom: #{$i}+"vh";
+    }
+
+    .t-#{$i}vh {
+        top: #{$i}+"vh";
+    }
+
+    .l-#{$i}vw {
+        left: #{$i}+"vw";
+    }
+
+    .r-#{$i}vw {
+        right: #{$i}+"vw";
+    }
+
+    .b-#{$i}vh {
+        bottom: #{$i}+"vh";
+    }
+
+
+}

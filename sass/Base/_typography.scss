@@ -1,0 +1,161 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+label,
+.icon,
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.2;
+    text-decoration: none;
+
+}
+
+
+@media (max-width: 159px) {
+
+    /* Styles pour les appareils mobiles */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    button,
+    label {
+        font-size: 0.1em;
+        word-break: break-all;
+
+    }
+}
+
+@media (min-width : 160px) and (max-width: 576px) {
+
+    /* Styles pour les appareils mobiles */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    button,
+    label {
+        font-size: 1em;
+
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    /* Styles pour les tablettes */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    button,
+    label {
+        font-size: 1.5em;
+
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    /* Styles pour les petits écrans d'ordinateur portable */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    button,
+    label {
+        font-size: 3em;
+
+    }
+}
+
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    /* Styles pour les grands écrans d'ordinateur portable et desktop */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    button,
+    label {
+        font-size: 1em;
+
+    }
+}
+
+@media (min-width: 1201px) and (max-width : 1599px) {
+
+    /* Styles pour les grands écrans d'ordinateur portable et desktop */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    button,
+    label {
+        font-size: 1em;
+
+    }
+}
+
+
+@media (min-width: 1600px) and (max-width : 2000px) {
+
+    /* Styles pour les très grands écrans */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    button,
+    label {
+        font-size: 1em;
+
+    }
+}
+
+@media (min-width: 2001px) {
+
+    /* Styles pour les très grands écrans */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    button,
+    label {
+        font-size: 2em;
+
+    }
+}

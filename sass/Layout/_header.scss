@@ -1,23 +1,172 @@
-nav{
+nav {
+    position: absolute;
     display: flex;
+    flex-direction: column;
     width: 5vw;
     height: 100%;
-    flex-flow: column wrap;
-    background-color: rgba($color: #4e0c0c, $alpha: 1.0);
-    .icon{
-        margin-bottom: 5vh;
-        
+    justify-content: flex-start;
+    box-shadow: 0 0 10px #21002e;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #530092, #540082, #520073, #4f0064, #4b0057, #45014f, #400147, #3a0240, #33033c, #2d0337, #260233, #21002e);
+    z-index: 1;
+
+}
+
+.burger-open {
+    height: 100%;
+
+    .nav-btn {
+        display: flex;
+        width: 50%;
+        margin: 1em;
+        border: 1px solid white;
+        border-radius: 1em;
+        justify-content: center;
+
+        h2 {
+            position: relative;
+            transition: margin-left 1s ease, opacity 1s ease;
+            opacity: 1;
+            visibility: visible;
+
+        }
     }
 }
 
 
+@media (max-width: 159px) {
 
-nav:hover{
-    width: 15vw;
-    .text-hide-hv{
-        opacity: 1;
-        visibility: visible;
-        margin-left: 5vw;
+    /* Styles pour les appareils de schtroumph */
+    nav {
+        width: 100vw;
+        height: 5vh;
+
+        .nav-btn {
+            display: none;
+        }
+
+        .nav-burger {
+            display: flex;
+        }
+
     }
-    
+}
+
+@media (min-width : 160px) and (max-width: 576px) {
+
+    /* Styles pour les appareils mobiles */
+    nav {
+        width: 100vw;
+        height: 5vh;
+
+        .nav-btn {
+            display: none;
+        }
+
+        .nav-burger {
+            display: flex;
+        }
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    /* Styles pour les tablettes */
+    nav {
+        width: 100vw;
+        height: 5vh;
+
+        .nav-btn {
+            display: none;
+        }
+
+        .nav-burger {
+            display: flex;
+        }
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    /* Styles pour les petits écrans d'ordinateur portable */
+    nav {
+        width: 100vw;
+        height: 5vh;
+
+        .nav-btn {
+            display: none;
+        }
+
+        .nav-burger {
+            display: flex;
+        }
+    }
+}
+
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    /* Styles pour les grands écrans d'ordinateur portable et desktop */
+    nav {
+        width: 100vw;
+        height: 5vh;
+
+        .nav-btn {
+            display: none;
+        }
+
+        .nav-burger {
+            display: flex;
+        }
+    }
+}
+
+
+@media (min-width: 1201px) and (max-width : 2000px) {
+
+    /* Styles pour les très grands écrans */
+    nav {
+
+        .nav-burger {
+            display: none;
+        }
+
+        &:hover {
+            width: 15vw;
+
+            .nav-btn {
+                h2 {
+                    transition: margin-left 1s ease, opacity 1s ease;
+                    opacity: 1;
+                    visibility: visible;
+                    margin-left: 5vw;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 2001px) {
+
+    /* Styles pour les très grands écrans */
+    nav {
+        .nav-burger {
+            display: none;
+        }
+
+        &:hover {
+            width: 15vw;
+
+            .nav-btn {
+                h2 {
+                    transition: margin-left 1s ease, opacity 1s ease;
+                    opacity: 1;
+                    visibility: visible;
+                    margin-left: 5vw;
+                }
+            }
+        }
+    }
 }

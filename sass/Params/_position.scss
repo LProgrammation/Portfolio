@@ -1,27 +1,11 @@
-.absolute{
-    position: absolute;
-}
-.relative{
-    position: relative;
-}
+$positions : relative,
+absolute,
+sticky,
+static,
+fixed;
 
-.ctr-jf-ct{
-    justify-content: center;
-}
-.ctr-alg-itm{
-    align-items: center;
-}
-
-.left{
-    left: 1vw;
-}
-
-.right{
-    right: 0;
-}
-.top{
-    top: 0;
-}
-.bottom{
-    bottom: 0;
+@each $position in $positions {
+    .p-#{$position} {
+        position: #{$position};
+    }
 }

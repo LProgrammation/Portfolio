@@ -1,0 +1,8 @@
+$displays : flex, block, none, inline ; 
+
+// Generation of different display class
+@each $display in $displays {
+    .d-#{$display}{
+        display: #{$display};
+    }
+}

@@ -1,17 +1,42 @@
-@media (max-width: 159px) {
-    .icon {
-        font-size: 20em;
+input {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    padding: 1em;
+    margin: 10px;
+    border: none;
+    outline: none;
+    border-radius: 1em;
 
+    &:hover,
+    &:focus {
+        box-shadow: 0 0 10px rgba($color: #575757, $alpha: 1.0);
+        transform: scale(1.01)
     }
 }
 
+textarea {
+    @extend input;
+    height: 300px;
+}
+
+
+@media (max-width: 159px) {
+
+    /* Styles pour les appareils de schtroumph */
+    input {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+}
 
 @media (min-width : 160px) and (max-width: 576px) {
 
     /* Styles pour les appareils mobiles */
-    .icon {
-        font-size: 2em;
-
+    input {
+        padding: 2em;
     }
 }
 
@@ -19,9 +44,8 @@
 @media (min-width: 577px) and (max-width: 768px) {
 
     /* Styles pour les tablettes */
-    .icon {
-        font-size: 2em;
-
+    input {
+        padding: 2em;
     }
 }
 
@@ -29,36 +53,24 @@
 @media (min-width: 769px) and (max-width: 992px) {
 
     /* Styles pour les petits écrans d'ordinateur portable */
-    .icon {
-        font-size: 2em;
-
+    input {
+        padding: 1.5em;
     }
 }
 
 
 @media (min-width: 993px) and (max-width: 1200px) {
-
     /* Styles pour les grands écrans d'ordinateur portable et desktop */
-    .icon {
-        font-size: 2em;
 
-    }
 }
 
 
 @media (min-width: 1201px) and (max-width : 2000px) {
-
     /* Styles pour les très grands écrans */
-    .icon {
-        font-size: 3em;
 
-    }
 }
 
 @media (min-width: 2001px) {
-
     /* Styles pour les très grands écrans */
-    .icon {
-        font-size: 4em;
-    }
+
 }

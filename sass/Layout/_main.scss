@@ -1,65 +1,218 @@
-main{
+main {
     display: flex;
-    flex-wrap: wrap;
-    width: 95vw;
-    margin: 10px;
-    padding: 10px;
-    margin-left: calc(5vw + 10px);
-    background-color: rgba($color: #640000, $alpha: 0.5);
-    border-radius: 1rem;
-    gap: 10px;
-}
 
-#content1,
-#content2{
-    flex: 1;
-    
-}
-
-#profil{
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid white;
-    border-radius: 1rem;
-    gap: 10px;
-    justify-content: space-between; 
-
-    img{
-        border-radius: 1rem;
-        width: 20vw;
-        border: 1px solid white;
+    #content1,
+    #content2 {
+        margin: 10px;
+        flex: 1;
     }
-    #profilInfo{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        border-radius: 1rem;
-        width: 60%;
-        border: 1px solid white;
-        gap: 10px;
-    }
-}
 
-#contactForm{
-    display: flex;
-    height: 50vh;
-    margin: 10px;
-}
+    #content1 {
+        height: fit-content;
 
-@media screen and (max-width : 768px) {
-    #content1,#content2{min-width: 80%;}
+        #profil {
+            margin: 10px;
+            border-radius: 1em;
+            border: 1px solid white;
+            display: flex;
 
-    #profil{
-        flex-flow: column wrap;
-        img{
-            min-width: 80%;
+            img {
+                margin: auto;
+                padding: 0.5em;
+                border-radius: 2em;
+            }
+
+            #profilInfo {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                h4,
+                p {
+                    margin: 1em;
+                    border: 1px solid white;
+                    padding: 0.5em;
+                    text-align: justify;
+                    text-justify: auto;
+                    border-radius: 1em;
+                }
+            }
         }
-        #profilInfo{
-            min-width: 80%;
+
+        form {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex: 1;
+            padding: 1em;
+            border-radius: 1em;
+            border: 1px solid white;
+
+        }
+    }
+
+  
+
+}
+
+
+
+@media (max-width: 159px) {
+
+    /* Styles pour les appareils de schtroumph */
+    main {
+        width: 100vw;
+        margin-top: 5vh;
+        margin-left: 0;
+        flex-direction: column;
+
+        #content1 {
+            #profil {
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+
+                img {
+                    width: 100%;
+                    margin: auto;
+                    padding: 0;
+                }
+            }
+
+            form {
+                margin: 0px;
+                padding: 0px;
+
+
+            }
+        }
+    }
+}
+
+@media (min-width : 160px) and (max-width: 768px) {
+
+    /* Styles pour les tablettes */
+    main {
+        width: 100vw;
+        margin-top: 5vh;
+        margin-left: 0;
+        flex-direction: column;
+
+        #content1 {
+            #profil {
+                flex-direction: column;
+
+                img {
+                    margin: auto;
+
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    /* Styles pour les petits écrans d'ordinateur portable */
+    main {
+        width: 100vw;
+        margin-top: 5vh;
+        margin-left: 0;
+        flex-direction: column;
+
+        #content1 {
+            #profil {
+                flex-direction: column;
+
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    /* Styles pour les grands écrans d'ordinateur portable et desktop */
+    main {
+        width: 100vw;
+        margin-top: 5vh;
+        margin-left: 0;
+        flex-direction: column;
+
+        #profil {
+            flex-direction: row;
+
+            img {
+                width: 50%;
+
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1201px) and (max-width : 1599px) {
+
+    /* Styles pour les très grands écrans */
+    main {
+        width: 95vw;
+        margin-top: 0;
+        margin-left: 5vw;
+        flex-direction: row;
+
+        #profil {
+            flex-direction: row;
+
+            img {
+                width: 300px;
+                height: 400px;
+
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1600px) and (max-width : 2000px) {
+
+    /* Styles pour les très grands écrans */
+    main {
+        width: 95vw;
+        margin-top: 0;
+        margin-left: 5vw;
+        flex-direction: row;
+
+        #profil {
+            img {
+                width: 50%;
+
+            }
+        }
+
+    }
+}
+
+@media (min-width: 2001px) {
+
+    /* Styles pour les très grands écrans */
+    main {
+        width: 95vw;
+        margin-top: 0;
+        margin-left: 5vw;
+        flex-direction: row;
+
+        #profil {
+            img {
+                width: 50%;
+                height: auto;
+            }
         }
     }
 }

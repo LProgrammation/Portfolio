@@ -1,0 +1,11 @@
+$wraps : wrap, wrap-reverse, nowrap ; 
+
+@each $wrap in $wraps {
+    .f-#{$wrap}{
+        flex-wrap: #{$wrap};
+    }
+}
+
+.flex{
+    flex: 1;
+}

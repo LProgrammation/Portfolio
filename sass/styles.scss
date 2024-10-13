@@ -3,16 +3,22 @@
 
 @import "./Component/button";
 @import "./Component/icon";
-@import "./Component/text";
+@import "./Component/input";
+@import "./Component/label";
 
 @import "./Layout/footer";
 @import "./Layout/header";
-@import "./Layout/loading";
 @import "./Layout/main";
 
 @import "./Animation/button";
-@import "./Animation/slide";
 @import "./Animation/text";
 @import "./Animation/header";
 
+@import "./Params/size";
+@import "./Params/color";
+@import "./Params/display";
 @import "./Params/position";
+@import "./Params/flex";
+@import "./Params/border";
+@import "./Params/margin";
+@import "./Params/padding";

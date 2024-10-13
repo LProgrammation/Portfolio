@@ -1,10 +1,10 @@
-footer{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba($color: #550808, $alpha: 1.0);
+footer {
+    background-image: linear-gradient(to left, #5e009b, #57008f, #4f0083, #480077, #41006b, #3c0161, #370157, #32024d, #2d0342, #280438, #22032e, #1e0025);
     width: 100vw;
-    height: 10vh;
     z-index: 1;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+
+    h2 {
+        padding: 1em;
+    }
 }
